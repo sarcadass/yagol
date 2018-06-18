@@ -11,6 +11,12 @@
     "lifeMap": [6,7,8,5,1]
   },
 
+  "Double Glider": {
+    "name": "Double Glider",
+    "shapeSize": [5,5],
+    "lifeMap": [20,15,10,5,0,6,12,18,24,19,14,9,4]
+  },
+
   "Exploder": {
     "name": "Exploder",
     "shapeSize": [5,5],
