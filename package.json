@@ -1,6 +1,6 @@
 {
   "name": "yagol",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Yagol is a Conway's Game of Life sandbox game made with react. Customize the different options then create, share and watch your shapes evolve.",
   "author": "Benjamin Blonde",
   "license": "MIT",
