@@ -1,0 +1,240 @@
+/* Controls */
+.controls {
+  position: absolute;
+  min-width: 280px;
+  top: 0;
+  right: 0;
+  transform: translate3d(90%,15px,0);
+  transition: transform .3s;
+  z-index: 1;
+}
+
+.controls.open {
+  transform: translate3d(-15px,15px,0);
+}
+
+.controls header {
+  display: flex;
+  border-color: inherit;
+}
+
+.open-controls-cta {
+  width: 44px;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color: inherit;
+  cursor: pointer;
+  outline: 0;
+  background-color: rgba(0,0,0,0);
+  transition: background-color .3s;
+}
+
+.open-controls-cta .icon {
+  position: relative;
+  display: block;
+  margin: 25px auto 0;
+  transform: scaleX(-1) translateY(-50%);
+  transition: transform .3s;
+}
+
+.controls.open .open-controls-cta .icon {
+  transform: scaleX(1) translateY(-50%);
+}
+
+/* Info Bar */
+.controls-bar-wrapper {
+  border-color: inherit;
+}
+
+.info-bar {
+  display: flex;
+  padding: 8px 0;
+  border-color: inherit;
+}
+
+.info-bar .info {
+  font-size: .813em;
+  padding: 0 .625em;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  border-color: inherit;
+}
+
+.info-bar .info:first-child {
+  border-left: none;
+}
+
+.info-bar .info.counter {
+  width: 13em;
+  padding-left: 0;
+  text-align: right;
+}
+.info-bar .info.grid-size {
+  min-width: 4.5em;
+  text-align: center;
+}
+
+.info-bar .info.cells-graph .background {
+  min-width: 118px;
+}
+
+.info-bar .background {
+  position: relative;
+  height: 1.628em;
+  font-size: .85em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.info-bar .background .value {
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.info-bar .background-alive {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .15s;
+  transform: translate3d(-100%,0,0);
+}
+
+/* Controls Bar */
+.controls-bar {
+  display: flex;
+  border-color: inherit;
+}
+
+.big-cta {
+  display: block;
+  flex-basis: 33.333333%;
+  line-height: 14px;
+  padding: 10px 0;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  border-color: inherit;
+  border-radius: 0;
+  font-size: .75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  transition: background-color .3s;
+}
+
+.big-cta:last-child {
+  border-right: none;
+}
+
+/* Options */
+.options-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  max-height: calc(100vh - 84px);
+  padding: 0 15px;
+  width: 200px;
+  right: 0;
+  margin: 0;
+  border-style: solid;
+  border-width: 1px 0 0;
+  border-color: inherit;
+  background-color: inherit;
+  overflow: auto;
+  transform: translate3d(120%,0,0);
+  transition: transform .3s;
+}
+
+.options-wrapper.open {
+  transform: translate3d(0,0,0);
+}
+
+.options-list {
+  padding: 15px 0 20px;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 560px) {
+  .controls {
+    transform: translate3d(89%,0,0);
+  }
+  
+  .controls header {
+    font-size: 74%;
+  }
+  
+  .controls.open {
+    width: 100%;
+    transform: translate3d(0,0,0);
+  }
+  
+  .big-cta:hover,
+  .open-controls-cta:hover {
+    background-color: rgba(0,0,0,0);
+  }
+  
+  .open-controls-cta {
+    flex-basis: 5%;
+    text-align: center;
+  }
+
+  .open-controls-cta .icon {
+    margin-top: 24px;
+  }
+  
+  .controls-bar-wrapper {
+    flex-basis: 95%;
+  }
+  
+  .info-bar .info {
+    box-sizing: border-box;
+  }
+  
+  .info-bar .info.counter {
+    width: inherit;
+    flex-basis: 38%;
+  }
+  
+  .info-bar .info.grid-size {
+    flex-basis: 20%;
+  }
+  
+  .info-bar .info.cells-graph {
+    flex-basis: 42%;
+  }
+
+  .info-bar .info.cells-graph .background {
+    min-width: inherit;
+  }
+  
+  .big-cta {
+    padding: 7px 0;
+    font-size: 1em;
+  }
+  
+  .options-wrapper {
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  
+  .controls .options-wrapper {
+    transform: translate3d(16%,0,0);
+  }
+  
+  .controls.open .options-wrapper {
+    transform: translate3d(100%,0,0);
+  }
+  
+  .controls.open .options-wrapper.open {
+    transform: translate3d(0,0,0);
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "short_name": "Yagol",
+  "name": "Yagol - Game of Life sandbox",
+  "author": "Benjamin Blonde",
+  "icons": [
+    {
+      "src": "icons/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icons/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icons/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "display": "standalone",
+  "background_color": "#eee",
+  "theme_color": "#eee"
+}

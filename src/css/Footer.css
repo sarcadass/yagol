@@ -1,0 +1,86 @@
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 15px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+footer .credits-wrapper {
+  margin: 0;
+  line-height: 15px;
+  font-size: 9px;
+  text-align: right;
+}
+
+footer .credits-wrapper .first-row {
+  display: block;
+}
+
+footer .credits-wrapper strong {
+  font-size: 11px;
+}
+
+footer .social-share-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+footer .social-share-wrapper a {
+  display: block;
+  margin-right: 10px;
+}
+
+footer .social-share-wrapper a:last-child {
+  margin-right: 0;
+}
+
+footer .social-share-wrapper .github {
+  height: 20px;
+}
+
+footer .social-share-wrapper .social-cta {
+  position: relative;
+  padding: 5px 10px 5px 23px;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  transition: background-color .15s;
+}
+
+footer .social-share-wrapper .social-cta.facebook {
+  background-color: #3b5998;
+}
+
+footer .social-share-wrapper .social-cta.facebook:hover {
+  background-color: #4264aa;
+}
+
+footer .social-share-wrapper .social-cta.twitter {
+  background-color: #1dcaff;
+}
+
+footer .social-share-wrapper .social-cta.twitter:hover {
+  background-color: #37d0ff;
+}
+
+footer .social-share-wrapper .social-cta svg {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+@media screen and (max-width: 489px) {
+  footer .social-share-wrapper {
+    display: none;
+  }
+
+  footer .credits-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+}

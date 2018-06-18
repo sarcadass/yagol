@@ -1,0 +1,25 @@
+.play-cta {
+  width: 80px;
+}
+
+.play-cta .icon {
+  width: .75em;
+  margin-right: 5px;
+}
+
+.options-cta .icon {
+  width: .75em;
+  transform: rotate(90deg) scale(1);
+  margin-right: 5px;
+  transition: transform .3s;
+}
+
+.options-cta.open .icon {
+  transform: rotate(90deg) scale(-1);
+}
+
+.reset-cta .icon {
+  width: 1em;
+  transform: translateY(1px);
+  margin-right: 4px;
+}

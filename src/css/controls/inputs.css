@@ -1,0 +1,91 @@
+.input-block {
+  padding-top: 1em;
+}
+
+.input-label {
+  display: block;
+  margin: 0;
+  font-size: 1em;
+}
+
+.input-label span {
+  display: block;
+  padding-bottom: .375em;
+  margin: 0;
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.input-style {
+  display: block;
+  height: 2.334em;
+  width: 100%;
+  padding: 5px;
+  border: solid 1px currentColor;
+  background-color: transparent;
+  font-size: 12px;
+  color: inherit;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+.small-cta {
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  transition: all .3s;
+}
+
+.small-cta.disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+/* CHECKBOX */
+.checkbox-wrapper {
+  padding-bottom: .25em;
+}
+
+.checkbox-wrapper input[type=checkbox] {
+  display: none;
+}
+.checkbox-wrapper input[type=checkbox] + label {
+  font-size: .75em;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.checkbox-wrapper input[type=checkbox]:disabled + label {
+  opacity: .5;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.checkbox-wrapper label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.checkbox-wrapper label .checkbox-icon {
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  border: solid 1px;
+}
+
+.checkbox-wrapper label .label-text {
+  display: block;
+  padding-left: 14px;
+  line-height: 1.3em;
+} 
+
+/* SELECT */
+.select-wrapper option {
+  color: #000;
+}
